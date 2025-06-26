@@ -1,0 +1,18 @@
+.I {
+  width: 40px;
+  height: 40px;
+} 
+
+.navigator {
+  margin-left: auto; 
+}
+
+/* .lupa img:hover{
+font-size: x-large;
+  } */
+
+.topo a:hover{
+  color: var(--brand-color); 
+  font-size: x-large;
+
+}

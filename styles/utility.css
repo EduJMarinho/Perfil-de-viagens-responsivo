@@ -10,8 +10,7 @@
   --max-width: 23.43rem;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
   margin-inline: auto;
-  border: solid blue;
-}
+ }
 
 .even-columns {
   display: grid;
@@ -20,6 +19,10 @@
 
 .flex {
       display: flex;
+    }
+
+    .grid {
+      display: grid;
     }
 
 .desktop-only { 
@@ -54,19 +57,3 @@
     grid-auto-columns: 1fr;
 }
 }
-
-
-
-.I {
-  width: 40px;
-  height: 40px;
-} 
-
-.navigator {
-  margin-left: auto;
-}
-
-.Edu {
-  width: 176px;
-  height: 176px;
-} 

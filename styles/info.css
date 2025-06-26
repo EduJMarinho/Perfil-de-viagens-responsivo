@@ -1,0 +1,11 @@
+.Edu {
+  width: 7.5rem;
+  height: 7.5rem;
+} 
+
+@media (width >= 80rem){
+  .Edu {
+  width: 11rem;
+  height: 11rem;
+} 
+}
