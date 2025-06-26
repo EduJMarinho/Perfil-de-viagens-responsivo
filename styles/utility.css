@@ -1,0 +1,72 @@
+.py-base {
+  padding-block: var(--py-base);
+}
+
+.px-base {
+  padding-inline: var(--px-base);
+}
+
+.container {
+  --max-width: 23.43rem;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin-inline: auto;
+  border: solid blue;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.flex {
+      display: flex;
+    }
+
+.desktop-only { 
+  display: none; /* esconde tudo no mobile */
+}
+
+.align {
+  align-items: center;  
+}
+
+.justify {
+  justify-content: center;
+} 
+.gap1 {
+  gap: 1rem;
+}
+.gap1e5 {
+  gap: 1.5rem;
+}
+
+@media (width >= 80rem) {
+  .container {
+    --max-width: 80rem;
+  }
+
+  .desktop-only {
+    display: initial; /* aparece somente no desktop */
+    }   
+    
+    .even-columns {
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+}
+
+
+
+.I {
+  width: 40px;
+  height: 40px;
+} 
+
+.navigator {
+  margin-left: auto;
+}
+
+.Edu {
+  width: 176px;
+  height: 176px;
+} 

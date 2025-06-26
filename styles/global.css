@@ -1,0 +1,79 @@
+*, 
+*::bedore,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+
+:root {
+  --brand-color: #EF5F4C;
+  --background-color: #dafcfb;
+  --surface-color: #a0f0ee;
+  --skeleton-color: #6e8786;
+  --shape-transparency: rgba(218, 223, 224, 0.56);
+  --text-color-primary: #313131;
+  --text-color-secondary: #6C6C6C;
+
+  --ff-poppins: 'poppins', system-ui, sans-serif;
+
+  /* definimos os pesos com variaveis de fonte */
+  --fw-sm: 400;
+  --fw-md: 500;
+  --fw-bold: 800;
+
+  /* vamos criar as fontes para mobile e depois estipulamos para desktop */
+  --h1: 1.6rem;
+  --pg-md: .9rem;
+  --pg-sm: .7rem;
+
+  --px-base: 1rem; /* padding eixo X */
+  --py-base: 1rem; /* padding eixo Y */
+}
+
+html {
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-md);
+  font-size: var(--paragraph-md);
+  line-height: 1.5;
+  color: var(--text-color-primary);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+h1 { 
+ font-size: var(--h1) ;
+}
+
+h3 {
+  font-size: var(--pg-md);
+}
+
+p {
+  font-size:var(--pg-sm);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (width >= 80rem){
+:root {
+  --h1: 2rem;
+  --pg-md: 1.2rem;
+  --pg-sm: .95rem;
+
+  --px-base: 2rem;  
+  --py-base: 2rem;
+}
+}
