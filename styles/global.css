@@ -15,8 +15,8 @@
 
 :root {
   --brand-color: #EF5F4C;
-  --background-color: #dafcfb;
-  --surface-color: #a0f0ee;
+  --background-color: #ecfcfb;
+  --surface-color: #abd3d2;
   --skeleton-color: #6e8786;
   --shape-transparency: rgba(218, 223, 224, 0.56);
   --text-color-primary: #313131;
@@ -30,9 +30,10 @@
   --fw-bold: 800;
 
   /* vamos criar as fontes para mobile e depois estipulamos para desktop */
-  --h1: 1.6rem;
-  --pg-md: .9rem;
-  --pg-sm: .7rem;
+  --h1: 1.4rem;
+  --h2: .8rem;
+  --pg-md: .7rem;
+  --pg-sm: .5rem;
 
   --px-base: 1rem; /* padding eixo X */
   --py-base: 1rem; /* padding eixo Y */
@@ -46,17 +47,29 @@ html {
   color: var(--text-color-primary);
 }
 
-body {
-  background-color: var(--background-color);
+body {  
+  background: linear-gradient(
+    90deg,     
+  var(--background-color) 0%,
+  var(--surface-color) 100%
+  )   
 }
 
 h1 { 
  font-size: var(--h1) ;
 }
 
+h2 { 
+ font-size: var(--h2) ;
+}
+
 h3 {
   font-size: var(--pg-md);
 }
+
+img {
+  max-width: 100%;
+ }
 
 p {
   font-size:var(--pg-sm);
@@ -69,9 +82,10 @@ a {
 
 @media (width >= 80rem){
 :root {
-  --h1: 2rem;
-  --pg-md: 1.2rem;
-  --pg-sm: .95rem;
+  --h1: 1.7rem;
+  --h2: .9rem;
+  --pg-md: .9rem;
+  --pg-sm: .75rem;
 
   --px-base: 2rem;  
   --py-base: 2rem;

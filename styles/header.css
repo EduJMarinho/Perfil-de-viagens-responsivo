@@ -7,12 +7,24 @@
   margin-left: auto; 
 }
 
-/* .lupa img:hover{
-font-size: x-large;
-  } */
+.lupa img:hover{
+cursor: pointer;
+width: 30px ;
+height: 30px;
+}
+
+.topo {
+  margin: .5rem;
+}
 
 .topo a:hover{
   color: var(--brand-color); 
   font-size: x-large;
+}
 
+@media (width >= 80rem){  
+  .lupa img:hover{
+width: 40px ;
+height: 40px;
+  }
 }

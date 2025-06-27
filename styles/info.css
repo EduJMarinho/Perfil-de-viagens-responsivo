@@ -1,11 +1,45 @@
-.Edu {
-  width: 7.5rem;
-  height: 7.5rem;
+.info {
+  display: block;
+  padding: 1rem; 
+}
+ 
+.textedu {
+  display: block;  
+}
+
+.iconstext {
+  display: flex;
+  gap: 1rem;
+}
+
+.edu {
+  & img {
+width: 120px; 
+  }  
 } 
 
-@media (width >= 80rem){
-  .Edu {
-  width: 11rem;
-  height: 11rem;
-} 
+@media (width >= 80rem){  
+.about { 
+  gap: 10rem; 
+}
+
+.edu {
+ & img {
+width: 39rem; 
+  }
+  }
+
+.aboutleft { 
+  gap: 4rem;
+  padding: 1rem;
+  width: 592px; 
+  display: flex;   
+}
+
+.info {
+   margin-left: 18rem;
+}
+.info:hover{
+  color: var(--brand-color);   
+}
 }
