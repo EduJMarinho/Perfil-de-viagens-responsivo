@@ -2,37 +2,29 @@
   display: grid;
   position: relative ;
   overflow: hidden;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   cursor: pointer;
     
  & img {   
      border-radius: .5rem;     
-  }
-  
-  & h2 {
-    /* position: absolute; */
-    /* top: 1rem;
-    left: 3rem;     */
-  }
+  }  
 
   & h2:active{
   color: var(--brand-color); 
   font-size: medium;  
-  cursor: pointer;
-  transform: translateY(1rem);
-} }
+  cursor: pointer; 
+} 
+}
 
 @media (width >= 80rem){
+
  .cards { 
   grid-template-columns: repeat(4, 1fr);  
 } 
 
   & h2:hover{
   color: var(--brand-color); 
-font-size: large;  
-  /* cursor: pointer; */
-  transform: translateY(1.5rem);
+  font-size: large;  
+  cursor: pointer;
 }
 }
-
-

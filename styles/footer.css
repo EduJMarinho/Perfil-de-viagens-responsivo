@@ -1,6 +1,33 @@
 footer{
-  display: flex;
+  display: block;
+  align-items: center;
+   letter-spacing: .06em;
+  margin-bottom: 3rem; 
+  gap: initial;
+  gap: 3rem;
+
   & a{
-    
+    font-size: .7rem;     
+    text-transform: uppercase;    
+  }  
+}
+
+.politic {  
+  display: flex;
+  gap: 4rem;  
+  margin-left: auto;
+
+ & a:active {
+  color: var(--brand-color); 
+}
+}
+
+@media (width >= 80rem){
+  footer{
+  display: flex;
   }
+
+  & a:hover {
+  color: var(--brand-color); 
+}
 }

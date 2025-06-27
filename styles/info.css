@@ -39,6 +39,7 @@ width: 39rem;
 .info {
    margin-left: 18rem;
 }
+
 .info:hover{
   color: var(--brand-color);   
 }
